@@ -1,7 +1,5 @@
 ---
 - name: Print Hello World
   hosts: localhost
-  tasks:
-    - name: Print Hello!
-      ansible.builtin.debug:
-        msg: Hello World
+  roles:
+    - sample
