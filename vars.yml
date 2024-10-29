@@ -10,4 +10,4 @@
   tasks:
     - name: Print URL
       ansible.builtin.debug:
-        msg: URL1 - {{ URLS.URL2 }}
+        msg: URL2 - {{ URLS[1] }}
