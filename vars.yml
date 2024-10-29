@@ -26,5 +26,5 @@
 
     - name: print from role
       roles:
-        sample
+        - sample
       
