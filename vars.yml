@@ -15,4 +15,4 @@
       vars:
         Company: Google
       ansible.builtin.debug:
-        msg: {{ Company }}
+        msg: "{{ Company }}"
