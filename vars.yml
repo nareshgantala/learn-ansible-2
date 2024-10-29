@@ -24,7 +24,8 @@
       ansible.builtin.debug:
         msg: City - {{ City }}
 
-    - name: print from role
-      roles:
-        - sample
+- name: print from role
+  hosts: localhost
+  roles:
+    - sample
       
