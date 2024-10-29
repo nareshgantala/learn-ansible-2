@@ -3,7 +3,9 @@
   hosts: localhost
   vars:
     - URL1: play.example.com
+      demo: Google
     - URL2: play2.example.com
+      demo: Yahoo
   tasks:
     - name: Print URL
       ansible.builtin.debug:
