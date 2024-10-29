@@ -2,11 +2,12 @@
 - name: Demo on Play level variables
   hosts: localhost
   vars:
-    - URL1: play.example.com
-      demo: Google
-    - URL2: play2.example.com
-      demo: Yahoo
+    URLS:
+      - URL1: play.example.com
+        demo: Google
+      - URL2: play2.example.com
+        demo: Yahoo
   tasks:
     - name: Print URL
       ansible.builtin.debug:
-        msg: URL1 - {{ URL1 }}
+        msg: URL1 - {{ URLS.URL2 }}
