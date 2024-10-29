@@ -11,3 +11,8 @@
     - name: Print URL
       ansible.builtin.debug:
         msg: URL2 - {{ URLS[1] }}
+    - name: define task level variables
+      vars:
+        Company: Google
+      ansible.builtin.debug:
+        msg: {{ Company }}
