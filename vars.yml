@@ -10,17 +10,21 @@
   vars_files:
     exvars.yml
   tasks:
-    - name: Print URL
+    - name: Print URL froom play level variable
       ansible.builtin.debug:
         msg: URL2 - {{ URLS[1] }}
 
-    - name: define task level variables
+    - name: Print from task level
       vars:
         Company: Google
       ansible.builtin.debug:
         msg: "{{ Company }}"
-        
-    - name: print from file
+
+    - name: print from a file
       ansible.builtin.debug:
         msg: City - {{ City }}
+
+    - name: print from role
+      roles:
+        sample
       
